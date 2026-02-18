@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(5, 39, 79, 1);
+}
+header, footer{
+    background-color: rgb(228, 228, 228);
+    height: 130px;
+}
+.margen{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+/* .fondo{
+    background: linear-gradient(to right, rgb(255, 255, 255), 60%, transparent), url(../assets/fondoRollos.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+} */
+
+p{
+    font-family: Libre Baskerville, serif;
+    font-size: 1.5rem;
+}
+
+.logo{
+    height: auto;
+    width: 10vw;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.redes{
+    height: 10vh;
+    width: auto;
+}
+.trabajos{
+    height: auto;
+    width: 20vw;
+}

@@ -1,0 +1,28 @@
+w3school --> pagina para investigar etiquetas
+
+<nav> es etiqueta de navegacion. Le indica al navegador, una seccion de la pagina que va a linkear a otras paginas o a otras partes de l pagina.
+<ul> unordered list
+<ol> ordered list
+<li> items de la lista
+
+<a> enlaces a paginas externas o internas de la mia --> 
+./ busca un archivo en la carpeta en la que esta parado mi archivo. Por ej si yo estoy en el archivo index, va a buscar otro archivo, dentro de la misma carpeta que se encuentra index. Es decir, busca un archivo o carpeta entre todas las que estan dentro de la misma carpeta que se encuentra index. En este caso, busca en la carpeta "federicoImp"
+../ vuelve una carpeta para atras
+
+alt + shift + ↓ = copias y pegas automaticamente toda la linea seleccionada
+alt + ↑/↓ = mueve de lugar la linea
+
+jerarquias: section --> article --> div
+
+1 rem = 16px
+1 em = valor de su herencia (padre, abuelo, etc)
+
+click + alt = se habilitan varios espacios para escribir al mismo tiempo
+
+
+--------Clase 3
+DISPLAY
+-block: ocupa todo el ancho de la pantalla, mas alla del tamaño que yo le ponga al elemento. Se ubica un elemento debajo del otro por esta misma razon.
+-inline: ocupa solamente el espacio de su contenido. Y estos si se ubican uno al lado del otro
+
+
