@@ -1,21 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
 /* reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgba(5, 39, 79, 1);
 }
-header, footer{
+
+
+/* header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    width: 100vw;
+    height: 130px;
+    position: sticky;
+    top: 0;
+} */
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-areas: "logo ul"; */
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    width: 100vw;
+    height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.col-header2 {
+    grid-column: 2/3;
+}
+
+.col-header3 {
+    grid-column: 3/4;
+}
+
+.col-header4 {
+    grid-column: 4/5;
+}
+
+.col-header3 p {
+    color: rgb(5, 39, 79);
+    width: 420px;
+}
+
+.barra {
+    display: flex;
+    gap: 20px;
+}
+
+.barra a {
+    color: rgb(5, 39, 79);
+}
+
+.barra li:nth-child(4) {
+    width: 130px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
     background-color: rgb(228, 228, 228);
     height: 130px;
 }
-.margen{
-    margin-left: 300px;
-    margin-right: 300px;
+
+.margen {
+    /* equivale a 300px, si 1920px = 100vw, 300px = 15.625 */
+    padding-left: 15.625vw;
+    padding-right: 15.625vw;
 }
+
+#alto {
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#m-alto {
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
 /* .fondo{
     background: linear-gradient(to right, rgb(255, 255, 255), 60%, transparent), url(../assets/fondoRollos.jpeg);
     background-size: cover;
@@ -23,30 +106,497 @@ header, footer{
     height: auto;
 } */
 
-p{
+h1 {
     font-family: Libre Baskerville, serif;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 32px;
 }
 
-.logo{
+p {
+    font-family: Libre Baskerville, serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.cta {
+    display: block;
+    height: 45px;
+    width: 250px;
+    background-color: rgb(227, 129, 0);
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    /* transition: 0.5s; */
+    cursor: pointer;
+    align-content: center;
+}
+
+.proveedores {
+    background-color: white;
+}
+
+.logo {
     height: auto;
     width: 10vw;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.redes{
-    height: 10vh;
-    width: auto;
-}
-.trabajos{
+.trabajos {
     height: auto;
     width: 20vw;
+}
+
+.wpp {
+    position: fixed;
+    height: 7vh;
+    width: auto;
+    bottom: 200px;
+    right: 50px;
+}
+
+.cajita {
+    /* height: 400px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    /* margin: 20px; */
+
+}
+
+.caja {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+.cajita2 {
+    width: 7.2vw;
+    text-align: center;
+    /* margin: 20px; */
+}
+
+.cajita3 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20.8vw;
+    text-align: justify;
+    /* margin: 15px; */
+}
+
+.redesPadre {
+    display: flex;
+    gap: 10px;
+}
+
+.redesPadre img {
+    height: 2vw;
+    width: 2vw;
+}
+
+.prov-img {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 200px;
+}
+
+.columna {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 70px;
+}
+
+/* --------------------------------------------------- EMPRESA */
+.empresa {
+    background-color: white;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* justify-items: center; */
+    align-items: center;
+    column-gap: 50px;
+}
+
+.empresa h1 {
+    position: relative;
+    display: inline-block;
+    color: rgb(5, 39, 79);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* border-bottom: 3px solid rgb(227, 129, 0); */
+}
+
+.empresa h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 20%;
+    height: 3px;
+    background-color: rgb(227, 129, 0);
+    border-radius: 2px;
+}
+
+.empresa p {
+    color: rgb(49, 49, 49);
+    width: 380px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: justify;
+    border-bottom: 3px solid rgb(228, 228, 228);
+    padding-bottom: 60px;
+}
+
+.empresa img {
+    width: 700px;
+    height: auto;
+    grid-column: 3/5;
+    grid-row: 2/5;
+}
+
+.empresa1 {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.empresa1 h2 {
+    color: white;
+}
+
+.titulo {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: white;
+}
+
+.celda1 {
+    width: 300px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    border-right: 3px solid rgb(103, 103, 103);
+    padding-right: 20px;
+}
+
+.celda1 img,
+.celda2 img,
+.celda3 img,
+.celda1 h2,
+.celda2 h2,
+.celda3 h2 {
+    margin-bottom: 20px;
+}
+
+.celda2 {
+    width: 400px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: center;
+}
+
+.celda3 {
+    width: 300px;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    text-align: center;
+    border-left: 3px solid rgb(103, 103, 103);
+    padding-left: 20px;
+}
+
+.empresa2 {
+    background-color: white;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* justify-items: center; */
+    align-items: center;
+    column-gap: 50px;
+}
+
+.empresa2 h2 {
+    position: relative;
+    display: inline-block;
+    color: rgb(5, 39, 79);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* border-bottom: 3px solid rgb(227, 129, 0); */
+}
+
+.empresa2 h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 20%;
+    height: 3px;
+    background-color: rgb(227, 129, 0);
+    border-radius: 2px;
+}
+
+.empresa2 p {
+    color: rgb(49, 49, 49);
+    width: 380px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: justify;
+    border-bottom: 3px solid rgb(228, 228, 228);
+    padding-bottom: 60px;
+}
+
+.empresa2 img {
+    width: 700px;
+    height: auto;
+    grid-column: 3/5;
+    grid-row: 2/5;
+}
+
+.empresa3 {
+    background-color: rgb(237, 237, 237);
+    height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.empresa3 h2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: rgb(5, 39, 79);
+}
+
+.empresa3 p {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    color: rgb(49, 49, 49);
+}
+
+.empresa3 video {
+    height: 690px;
+    width: auto;
+}
+
+.vid1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.vid2 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.vid3 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+
+/* --------------------------------------------TABLET */
+
+@media (min-width: 480px) and (max-width: 960px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 170px;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .columna img {
+        width: 160px;
+        margin-bottom: 30px;
+    }
+
+    .prov-img {
+        display: inline;
+        gap: 0;
+    }
+
+    .columna {
+        flex-flow: nowrap;
+    }
+
+
+    .cajita2 {
+        width: 20vw;
+    }
+
+    .cajita2 img {
+        width: 60px;
+        margin-bottom: 15px;
+
+    }
+
+    .cajita3 img {
+        width: 300px;
+
+    }
+
+    .col-header3 p {
+        width: 310px;
+    }
+
+    #alto {
+        justify-content: space-evenly;
+    }
+
+    #m-alto {
+        height: 1000px;
+    }
+
+    .caja {
+        display: block;
+        width: 300px;
+    }
+
+    .cajita3 {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    /* -------------------------------seccion empresa */
+    .empresa {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .empresa img {
+        width: 350px;
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .empresa1 {
+        height: 80vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 30px;
+    }
+
+    .titulo {
+        grid-column: 2/3;
+    }
+
+    .celda1 {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 3px solid rgb(103, 103, 103);
+    }
+
+    .celda2 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .celda3 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        border-left: none;
+        padding-left: 0;
+        padding-top: 20px;
+        border-top: 3px solid rgb(103, 103, 103);
+    }
+
+    .empresa2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .empresa2 img {
+        width: 350px;
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .empresa3 {
+        height: 250vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .empresa3 h2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .empresa3 p {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .empresa3 video {
+        height: auto;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .vid1 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .vid2 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .vid3 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+}
+
+
+
+/* --------------------------------------------MOBILE */
+@media (min-width: 300px) and (max-width: 479px) {
+    /* main {
+        height: 200vh;
+    } */
 }
