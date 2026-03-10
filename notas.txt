@@ -25,4 +25,5 @@ DISPLAY
 -block: ocupa todo el ancho de la pantalla, mas alla del tamaño que yo le ponga al elemento. Se ubica un elemento debajo del otro por esta misma razon.
 -inline: ocupa solamente el espacio de su contenido. Y estos si se ubican uno al lado del otro
 
+sass --watch sass/main.scss styles/styles.css
 

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impermeabilizaciones Federico - Home</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
+    <link rel="stylesheet" href="./style2.css">
 </head>
 
 <body>
@@ -41,7 +45,50 @@
         <a href="https://www.whatsapp.com/" target="_blank">
             <img src="./assets/logos/whatsapp.png" alt="Logo de whatsapp" class="wpp">
         </a>
-        <section class="margen" id="alto">
+        <!-- carrusel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets//carrusel/cem_avellaneda-carr.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel/cem_avellaneda2-carr.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel/bahia-carr.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel/lomaNegra2-carr.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel/equipo-carr.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="seccion-a">
+            <h1>IMPERMEABILIZACIONES FEDERICO</h1>
+            <p class="subtit">Líderes en tratamientos de impermeabilización desde 1972</p>
+            <img class="grupo1-img" src="./assets/logos/envio.png" alt="Icono de envios a domicilio">
+            <p class="grupo1-p">Envíos a todo el país</p>
+            <img class="grupo2-img" src="./assets/logos/garantia1.png" alt="Icono de garantia asegurada">
+            <p class="grupo2-p">10 años de garantía</p>
+            <img class="grupo3-img" src="./assets/logos/pago.png" alt="Icono de variedad de metodos de pago">
+            <p class="grupo3-p">Todos los medios de pago</p>
+            <a href="./pages/contacto.html" class="cta">Contactarme</a>
+        </section>
+        <!-- <section class="margen" id="alto">
             <article>
                 <h1>IMPERMEABILIZACIONES FEDERICO</h1>
                 <p>Líderes en tratamientos de impermeabilización desde 1972</p>
@@ -63,9 +110,18 @@
             <article>
                 <a href="./pages/contacto.html" class="cta">Contactarme</a>
             </article>
-        </section>
+        </section> -->
         <!-- ----------------------------------------PROVEEDORES -->
-        <section class="proveedores" id="alto">
+        <section class="seccion-b">
+            <h2>PROVEEDORES</h2>
+            <img src="./assets/proveedores/mega.png" alt="Logo de Megaflex" class="img1">
+            <img src="./assets/proveedores/protex.png" alt="Logo de Protex" class="img2">
+            <img src="./assets/proveedores/kartonsec.png" alt="Logo de Kartonsec" class="img3">
+            <img src="./assets/proveedores/emapi.png" alt="Logo de Emapi" class="img4">
+            <img src="./assets/proveedores/weber.png" alt="Logo de Weber" class="img5">
+            <img src="./assets/proveedores/LamiPlas.png" alt="Logo de Lami Plas" class="img6">
+        </section>
+        <!-- <section class="proveedores" id="alto">
             <h2>PROVEEDORES</h2>
             <article class="prov-img">
                 <div class="columna">
@@ -81,9 +137,31 @@
                     <img src="./assets/proveedores/LamiPlas.png" alt="Logo de Lami Plas">
                 </div>
             </article>
-        </section>
+        </section> -->
         <!-- ----------------------------------------SERVICIOS -->
-        <section class="margen" id="m-alto">
+        <section class="seccion-c">
+            <h2 class="serv">SERVICIOS</h2>
+            <h2 class="h2-venta">Venta</h2>
+            <p class="p-venta">Contamos con un amplio catálogo de membranas asfálticas, aislantes térmicos y selladores
+                de última generación. Trabajamos con marcas líderes para garantizar la máxima durabilidad en cada
+                proyecto.
+            </p>
+            <img class="img-venta" src="./assets/servicios/venta.png"
+                alt="Imagen de la mercaderia de Impermeabilizaciones Federico">
+            <h2 class="h2-coloc">Colocación</h2>
+            <p class="p-coloc">Instalación experta de sistemas impermeabilizantes con personal capacitado. Aplicamos
+                técnicas precisas de termofusión y sellado para asegurar una cobertura total y definitiva contra la
+                humedad.</p>
+            <img class="img-coloc" src="./assets/servicios/colocacion.png"
+                alt="Imagen de trabajadores de Impermeabilizaciones Federico colocando membrana">
+
+            <h2 class="h2-ases">Asesoramiento</h2>
+            <p class="p-ases">Analizamos el estado de tu techo para recomendarte la solución más eficiente y económica.
+                Brindamos soporte técnico preventivo y presupuestos detallados sin compromiso.</p>
+            <img class="img-ases" src="./assets/servicios/asesoramiento.png"
+                alt="Imagen de trabajadores de Impermeabilizaciones Federico asesorando a un cliente">
+        </section>
+        <!-- <section class="margen" id="m-alto">
             <h2>SERVICIOS</h2>
             <article class="caja">
                 <div class="cajita3">
@@ -113,7 +191,7 @@
                         alt="Imagen de trabajadores de Impermeabilizaciones Federico asesorando a un cliente">
                 </div>
             </article>
-        </section>
+        </section> -->
     </main>
     <footer>
         <section class="col-header2">
@@ -141,6 +219,11 @@
             </nav>
         </section>
     </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

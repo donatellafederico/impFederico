@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impermeabilizaciones Federico - Contacto</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+    <link rel="stylesheet" href="../style2.css">
 </head>
 
 <body>
@@ -41,33 +42,57 @@
         <a href="https://www.whatsapp.com/" target="_blank">
             <img src="../assets/logos/whatsapp.png" alt="Logo de whatsapp" class="wpp">
         </a>
-        <section class="margen">
-            <article>
-                <h2>Balcarce 5055, Olavarria, Provincia de Buenos Aires, Argentina</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.0007997643816!2d-60.31307872415648!3d-36.91424527221489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959445c58b6c4fb1%3A0x9a59f2b6dbb74afc!2sImpermeabilizaciones%20Federico!5e0!3m2!1sen!2sar!4v1769542263899!5m2!1sen!2sar"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
+        <section class="contacto1">
+            <h1>CONTACTO</h1>
+            <p>Escríbanos y a la brevedad será contactado por un representante.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.0007997643816!2d-60.31307872415648!3d-36.91424527221489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959445c58b6c4fb1%3A0x9a59f2b6dbb74afc!2sImpermeabilizaciones%20Federico!5e0!3m2!1sen!2sar!4v1769542263899!5m2!1sen!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
             <form>
-                <label>Nombre:</label>
-                <input type="text" placeholder="Juan">
+                <label class="form_nombre">Nombre: *</label>
+                <input class="input_nombre" type="text" placeholder="Juan" required>
 
-                <label>Apellido:</label>
-                <input type="text" placeholder="Pérez">
+                <label class="form_apellido">Apellido: *</label>
+                <input class="input_apellido" type="text" placeholder="Pérez" required>
 
-                <label>Celular:</label>
-                <input type="number" placeholder="1124974345">
+                <label class="form_celular">Celular: *</label>
+                <input class="input_celular" type="number" placeholder="1124974345" required>
 
-                <label>e-Mail:</label>
-                <input type="email" placeholder="juanperez@gmail.com">
+                <label class="form_mail">e-Mail:</label>
+                <input class="input_mail" type="email" placeholder="juanperez@gmail.com">
 
-                <textarea>Deja tu comentario:</textarea>
+                <label class="form_msj">Mensaje:</label>
+                <textarea class="input_msj"></textarea>
 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Comenzar de nuevo">
-
+                <button class="enviar" type="submit">Enviar</button>
+                <!-- <input type="reset" value="Comenzar de nuevo"> -->
             </form>
+        </section>
+        <section class="contacto2">
+            <article class="contacto2_titulo">            
+                <h2>SUCURSAL Y CONTACTOS</h2>
+            </article>
+            <article class="contacto2_celda1">
+                <img src="../assets/logos/contacto/oficina1.png" alt="Ícono del año 1972">
+                <h2>Oficina principal Olavarría</h2>
+                <p>Balcarce 5055, Olavarría, Buenos Aires.</p>
+                <p>Lunes a Viernes:  8:00 - 17:00</p>
+            </article>
+            <article class="contacto2_celda2">
+                <img src="../assets/logos/contacto/telefono.png" alt="Ícono de 2 personas estrechando su mano">
+                <h2>Atención telefónica</h2>
+                <p>Depósito: 02284 450250 / 02284 15693308</p>
+                <p>Administración: 02284 15693309</p>
+            </article>
+            <article class="contacto2_celda3">
+                <img src="../assets/logos/contacto/correo.png" alt="Ícono de un camion llevando mercaderia">
+                <h2>Consultas por correo</h2>
+                <p>servicios@membranasfederico.com.ar</p>
+                <p>administracion@membranasfederico.com.ar</p>
+                <p>ventas@membranasfederico.com.ar</p>
+            </article>
         </section>
     </main>
 
