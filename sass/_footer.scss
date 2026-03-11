@@ -1,0 +1,80 @@
+@use "variables" as v;
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: v.$gris;
+    height: 130px;
+
+    .col-header2 {
+        grid-column: 2/3;
+
+        .logo {
+            height: auto;
+            width: 10vw;
+        }
+    }
+
+    .col-header3 {
+        grid-column: 3/4;
+
+        p {
+            color: v.$gris-font;
+            width: 420px;
+        }
+    }
+
+    .col-header4 {
+        grid-column: 4/5;
+
+        .redesPadre {
+            display: flex;
+            gap: 10px;
+
+            img {
+                height: 2vw;
+                width: 2vw;
+            }
+        }
+    }
+
+    @include v.tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 250px;
+
+        .col-header2 {
+            .logo {
+                width: 30vw;
+            }
+        }
+        .col-header3{
+            p{
+                width: 300px;
+            }
+        }
+    }
+
+    @include v.mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 170px;
+        row-gap: 20px;
+        .col-header2 {
+            .logo {
+                width: 30vw;
+            }
+        }
+        .col-header3{
+            p{
+                width: 250px;
+            }
+        }
+    }
+}

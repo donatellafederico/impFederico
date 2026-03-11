@@ -1,0 +1,82 @@
+@use "variables" as v;
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-areas: "logo ul"; */
+    justify-items: center;
+    align-items: center;
+    background-color: v.$gris;
+    width: 100vw;
+    height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .col-header2 {
+        grid-column: 2/3;
+
+        .logo {
+            height: auto;
+            width: 10vw;
+        }
+    }
+
+    .col-header4 {
+        grid-column: 4/5;
+
+        .barra {
+            display: flex;
+            gap: 30px;
+
+            a {
+                color: v.$azul;
+            }
+
+            a:hover {
+                color: v.$naranja;
+            }
+
+            li:nth-child(4) {
+                width: 160px;
+            }
+        }
+    }
+
+    @include v.tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        .col-header2 {
+            .logo {
+                width: 30vw;
+            }
+        }
+        .col-header4 {
+            .barra li:nth-child(4) {
+                width: 120px;
+            }
+        }
+    }
+    @include v.mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .col-header2 {
+            .logo {
+                width: 30vw;
+            }
+        }
+        .col-header4 {
+            .barra li:nth-child(4) {
+                width: 100px;
+            }
+            .barra{
+                gap: 15px;
+            }
+        }
+    }
+}

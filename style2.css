@@ -80,40 +80,6 @@ footer {
     height: 130px;
 }
 
-/* .margen {
-    equivale a 300px, si 1920px = 100vw, 300px = 15.625
-    padding-left: 15.625vw;
-    padding-right: 15.625vw;
-}
-
-#alto {
-    height: 500px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-#m-alto {
-    height: 600px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-} */
-
-
-
-
-/* .fondo{
-    background: linear-gradient(to right, rgb(255, 255, 255), 60%, transparent), url(../assets/fondoRollos.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-} */
-
 h1 {
     font-family: Libre Baskerville, serif;
     color: white;
