@@ -1,12 +1,11 @@
 @use "variables" as v;
 
+/*--------------------------------------------FOOTER SASS*/
 footer {
-    display: grid;
+    @extend %grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: center;
     background-color: v.$gris;
-    height: 130px;
+    padding: 50px 0 50px 0;
 
     .col-header2 {
         grid-column: 2/3;
@@ -33,9 +32,13 @@ footer {
             display: flex;
             gap: 10px;
 
-            img {
-                height: 2vw;
-                width: 2vw;
+            li {
+                list-style: none;
+
+                img {
+                    height: 2vw;
+                    width: 2vw;
+                }
             }
         }
     }
@@ -52,28 +55,31 @@ footer {
                 width: 30vw;
             }
         }
-        .col-header3{
-            p{
+
+        .col-header3 {
+            p {
                 width: 300px;
             }
         }
     }
 
-    @include v.mobile{
+    @include v.mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 170px;
         row-gap: 20px;
+
         .col-header2 {
             .logo {
                 width: 30vw;
             }
         }
-        .col-header3{
-            p{
-                width: 250px;
+
+        .col-header3 {
+            p {
+                width: 230px;
             }
         }
     }

@@ -1,17 +1,15 @@
 @use "variables" as v;
 
+/*----------------------------------------------------HEADER SASS*/
 header {
-    display: grid;
+    @extend %grid;
     grid-template-columns: repeat(5, 1fr);
     /* grid-template-areas: "logo ul"; */
-    justify-items: center;
-    align-items: center;
     background-color: v.$gris;
-    width: 100vw;
-    height: 130px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 50px 0 50px 0;
 
     .col-header2 {
         grid-column: 2/3;
@@ -29,12 +27,16 @@ header {
             display: flex;
             gap: 30px;
 
-            a {
-                color: v.$azul;
-            }
+            li {
+                list-style: none;
 
-            a:hover {
-                color: v.$naranja;
+                a {
+                    color: v.$azul;
+                }
+
+                a:hover {
+                    color: v.$naranja;
+                }
             }
 
             li:nth-child(4) {
@@ -54,27 +56,32 @@ header {
                 width: 30vw;
             }
         }
+
         .col-header4 {
             .barra li:nth-child(4) {
-                width: 120px;
+                width: 160px;
             }
         }
     }
-    @include v.mobile{
+
+    @include v.mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+
         .col-header2 {
             .logo {
                 width: 30vw;
             }
         }
+
         .col-header4 {
             .barra li:nth-child(4) {
-                width: 100px;
+                width: 110px;
             }
-            .barra{
+
+            .barra {
                 gap: 15px;
             }
         }
